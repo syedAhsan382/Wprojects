@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do List</h1>
+        <div class="input-container">
+            <input type="text" id="task-input" placeholder="Add a new task...">
+            <button id="add-task-btn">Add</button>
+        </div>
+        <ul id="task-list"></ul>
+    </div>
+
+    <script src="todo.js"></script>
+
+    <script type="module">
+     
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-analytics.js";
+        
+        const firebaseConfig = {
+          apiKey: "AIzaSyC5t9glHfRNAMEoKU9q1iK9PDj-3MPgn98",
+          authDomain: "webapp-basics-450e2.firebaseapp.com",
+          projectId: "webapp-basics-450e2",
+          storageBucket: "webapp-basics-450e2.firebasestorage.app",
+          messagingSenderId: "793040167123",
+          appId: "1:793040167123:web:207bf6cad22e4ad991f426",
+          measurementId: "G-PXTPCDKRMR"
+        };
+      
+       
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+</body>
+</html>
