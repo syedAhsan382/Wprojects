@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background: #f4f4f4;
+  }
+  h1 {
+    text-align: center;
+  }
+  .form-group, .summary, .search, .chart-container {
+    margin: 20px auto;
+    max-width: 600px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  .form-group input, .search input {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+  }
+  .form-group button, .search button {
+    padding: 10px;
+    width: 100%;
+    background-color: teal;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  .card {
+    background: #e3f2fd;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+  }

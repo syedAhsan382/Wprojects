@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Activity Tracker</title>
+  <link rel="stylesheet" href="DailyTracker.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<h1>Daily Activity Tracker</h1>
+
+<div class="form-group">
+  <h2>Log Activity</h2>
+  <input type="text" id="activity" placeholder="e.g. sleep">
+  <input type="number" id="hours" placeholder="Hours">
+  <input type="date" id="date">
+  <button onclick="logActivity()">Add Activity</button>
+</div>
+
+<div class="summary">
+  <h2>Weekly Summary</h2>
+  <div id="summaryCards"></div>
+</div>
+
+<div class="chart-container">
+  <h2>Sleep This Week</h2>
+  <canvas id="sleepChart"></canvas>
+</div>
+
+<div class="search">
+  <h2>Ask a Question</h2>
+  <input type="text" id="query" placeholder="e.g. How many hours did I sleep this week?">
+  <button onclick="handleSearch()">Search</button>
+  <p id="searchResult"></p>
+</div>
+
+<script src="DailyTracker.js"></script>
+
+</body>
+</html>
